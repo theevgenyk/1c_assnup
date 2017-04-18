@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="23"/>
+		</InputField>
+		<InputField name="Дата" id="3">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="Организация" id="5">
+			<DataPath>Объект.Организация</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="25"/>
+		</InputField>
+		<InputField name="Номенклатура" id="11">
+			<DataPath>Объект.Номенклатура</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НоменклатураКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="26"/>
+		</InputField>
+		<InputField name="Количество" id="15">
+			<DataPath>Объект.Количество</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КоличествоКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="КоличествоРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="ЕдиницаИзмерения" id="13">
+			<DataPath>Объект.ЕдиницаИзмерения</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЕдиницаИзмеренияКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ЕдиницаИзмеренияРасширеннаяПодсказка" id="28"/>
+		</InputField>
+		<InputField name="Дт" id="19">
+			<DataPath>Объект.Дт</DataPath>
+			<ContextMenu name="ДтКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ДтРасширеннаяПодсказка" id="29"/>
+		</InputField>
+		<InputField name="Кт" id="21">
+			<DataPath>Объект.Кт</DataPath>
+			<ContextMenu name="КтКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="КтРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="ОписаниеБрака" id="17">
+			<DataPath>Объект.ОписаниеБрака</DataPath>
+			<TitleLocation>Top</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОписаниеБракаКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="ОписаниеБракаРасширеннаяПодсказка" id="31"/>
+		</InputField>
+		<InputField name="НачальникСклада" id="7">
+			<DataPath>Объект.НачальникСклада</DataPath>
+			<TitleLocation>Top</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НачальникСкладаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="НачальникСкладаРасширеннаяПодсказка" id="32"/>
+		</InputField>
+		<InputField name="Комментарии" id="9">
+			<DataPath>Объект.Комментарии</DataPath>
+			<TitleLocation>Top</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомментарииКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="КомментарииРасширеннаяПодсказка" id="33"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject._АктНаБрак</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
